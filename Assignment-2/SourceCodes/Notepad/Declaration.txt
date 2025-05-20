@@ -1,0 +1,40 @@
+class Shape {
+    // Method in the Shape class
+    void displayShape() {
+        System.out.println("This is shape");
+    }
+}
+
+class Rectangle extends Shape {
+    // Method in the Rectangle class
+    void displayRectangle() {
+        System.out.println("This is rectangular shape");
+    }
+}
+
+class Circle extends Shape {
+    // Method in the Circle class
+    void displayCircle() {
+        System.out.println("This is circular shape");
+    }
+}
+
+class Square extends Rectangle {
+    // Method in the Square class
+    void displaySquare() {
+        System.out.println("Square is a rectangle");
+    }
+}
+
+public class ShapeExample {
+
+    public static void main(String[] args) {
+        // Creating an object of Square class
+        Square square = new Square();
+
+        // Calling methods of Shape, Rectangle, and Square classes
+        square.displayShape();       // Calling method of Shape class
+        square.displayRectangle();   // Calling method of Rectangle class
+        square.displaySquare();      // Calling method of Square class
+    }
+}

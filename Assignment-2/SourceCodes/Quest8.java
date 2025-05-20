@@ -1,0 +1,31 @@
+
+class Result {
+    void result() {
+        System.out.println("Result: Pass");
+    }
+}
+
+class UGResult extends Result {
+    void result() {
+        System.out.println("Undergraduate Result: Pass");
+    }
+}
+
+class PGResult extends Result {
+    void result() {
+        System.out.println("Postgraduate Result: Pass");
+    }
+}
+
+public class Quest8 {
+    public static void main(String[] args) {
+        Result result = new Result();
+        result.result();
+
+        UGResult ugResult = new UGResult();
+        ugResult.result();
+
+        PGResult pgResult = new PGResult();
+        pgResult.result();
+    }
+}
